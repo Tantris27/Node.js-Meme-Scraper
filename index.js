@@ -1,4 +1,5 @@
 const fetch = require('node-fetch');
+// eslint-disable-next-line unicorn/prefer-node-protocol
 const fs = require('fs');
 const cheerio = require('cheerio');
 
