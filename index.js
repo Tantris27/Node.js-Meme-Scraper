@@ -3,6 +3,9 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 const cheerio = require('cheerio');
 
+fs.mkdirSync('./Meme', { recursive: true });
+console.log("Creating or localizing 'Meme' folder...");
+
 const getReddit = async () => {
   const response = await fetch(
     'https://memegen-link-examples-upleveled.netlify.app/',
