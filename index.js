@@ -1,6 +1,5 @@
 const fetch = require('node-fetch');
-// eslint-disable-next-line unicorn/prefer-node-protocol
-const fs = require('fs');
+const fs = require('node:fs');
 const cheerio = require('cheerio');
 
 const siteUrl = 'https://memegen-link-examples-upleveled.netlify.app/';
