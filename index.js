@@ -29,7 +29,7 @@ const getMemes = async () => {
     async function download() {
       const response2 = await fetch(url);
       const buffer = await response2.buffer();
-      fs.writeFile(`./Meme/image${j}.jpg`, buffer, () =>
+      fs.writeFile(`./Meme/image${j + 1}.jpg`, buffer, () =>
         console.log('finished downloading!'),
       );
     }
